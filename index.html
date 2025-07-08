@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linked List Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Linked List Visualizer</h1>
+
+    <div class="input-section">
+      <input type="number" id="dataInput" placeholder="Enter data" />
+      <input type="number" id="positionInput" placeholder="Enter position (optional)" />
+    </div>
+
+    <div class="button-section">
+      <button onclick="appendData()">Append</button>
+      <button onclick="insertData()">Insert</button>
+      <button onclick="deleteData()">Delete</button>
+      <button onclick="searchData()">Search</button>
+      <button onclick="displayList()">Display</button>
+    </div>
+
+    <div id="listOutput" class="list-output"></div>
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
